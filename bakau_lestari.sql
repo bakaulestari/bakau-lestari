@@ -1,0 +1,26 @@
+-- Database Bakau Lestari
+CREATE DATABASE IF NOT EXISTS bakau_lestari;
+USE bakau_lestari;
+
+CREATE TABLE admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+INSERT INTO admin (username, password) VALUES ("admin", MD5("admin123"));
+
+CREATE TABLE galeri (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    judul VARCHAR(100) NOT NULL,
+    gambar VARCHAR(255) NOT NULL,
+    tanggal TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE kontak (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    pesan TEXT NOT NULL,
+    tanggal TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
