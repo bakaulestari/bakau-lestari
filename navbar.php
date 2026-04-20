@@ -12,7 +12,7 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="index.php">Beranda</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="tentang.php">Tentang Kami</a></li>
             <li><a href="program.php">Program</a></li>
             <li><a href="galeri.php">Galeri</a></li>
